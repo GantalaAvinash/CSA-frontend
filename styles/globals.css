@@ -534,3 +534,14 @@ body {
     margin: 4rem 2rem;
   }  
 }
+
+
+.dropdown-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+
+.dropdown {
+  width: 100%;
+}

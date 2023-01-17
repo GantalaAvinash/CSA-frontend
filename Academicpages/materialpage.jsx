@@ -15,8 +15,9 @@ const materialPage = () => {
   const [enableSub, setEnableSub] = useState(true);
   const [enableBtn, setEnableBtn] = useState(true);
 
+  const baseUrl = 'https://csa-backend-iuwv.onrender.com/api';
   useEffect(() => {
-    axios.get('https://csa-backend-iuwv.onrender.com/api/getbatch')
+    axios.get(`${baseUrl}/getbatch`)
       .then((response) => {
         setBatch(response.data.batch);
       })
@@ -26,7 +27,7 @@ const materialPage = () => {
     const handleBatch = async(e) => {
       const batchId = e.target.value;
       if(batchId!=='') {
-        const reqsemdata = await fetch(`https://csa-backend-iuwv.onrender.com/api/getsembybatch/${batchId}`);
+        const reqsemdata = await fetch(`${baseUrl}/getsembybatch/${batchId}`);
         const semdata = await reqsemdata.json();
         setSemester(semdata.semester);
         setEnable(false);
@@ -39,7 +40,7 @@ const materialPage = () => {
     const handleSemester = async(e) => {
       const semId = e.target.value;
       if(semId!=='') {
-        const reqsubdata = await fetch(`https://csa-backend-iuwv.onrender.com/api/getsubjectbysem/${semId}`);
+        const reqsubdata = await fetch(`${baseUrl}/getsubjectbysem/${semId}`);
         const subdata = await reqsubdata.json();
         setSubject(subdata.subject);
         setEnableSub(false);
@@ -62,25 +63,25 @@ const materialPage = () => {
     }
 
     return (
-        <div className={`${styles.dropdownpaddings} relative ml-[48px] mt-[48px] flex flex-col gap-[24px]`}>
-          <div>
-            <select onChange={handleBatch} className=" bg-white rounded-md border-2 border-gray-300 my-10 py-4 px-6 block w-full  text-gray-700">
+        <div className='container mx-auto my-10 mt-[60px] flex flex-col items-center justify-center '>
+          <div className="w-full md:w-1/3 mt-[30px]">
+            <select onChange={handleBatch} className="bg-white rounded-md border-2 border-gray-300 py-4 px-6 block w-full  text-gray-700">
                 <option value="">Select Batch</option>
                 {batch ? batch.length ? batch.map( (getbatch, index ) => (
                   <option value={getbatch.batchId} key={index}>{getbatch.batchYear}</option>
                 )) : <option value="">Loading...</option> : <option value="">Loading...</option>}
             </select>
           </div>
-          <div>
-            <select onChange={handleSemester} className="bg-white rounded-md border-2 border-gray-300 my-10 py-4 px-6 block w-full  text-gray-700" disabled={enable}>
+          <div className="w-full md:w-1/3 mt-[30px]">
+            <select onChange={handleSemester} className="bg-white rounded-md border-2 border-gray-300 py-4 px-6 block w-full  text-gray-700" disabled={enable}>
               <option value="">Select Semester</option>
               {semester ? semester.length ? semester.map( (getsemester, index ) => (
                 <option value={getsemester.semId} key={index}>{getsemester.semester}</option>
               )) : <option value="">Loading Semester...</option> : <option value="">Loading...</option>}
             </select>
           </div>
-          <div>
-            <select onChange={handleSubject} className="bg-white rounded-md border-2 border-gray-300 my-10 py-4 px-6 block w-full text-gray-700" disabled={enableSub}>
+          <div className="w-full md:w-1/3  my-20">
+            <select onChange={handleSubject} className="bg-white mt-[30px] rounded-md border-2 border-gray-300 py-4 px-6 block w-full text-gray-700" disabled={enableSub}>
               <option value="">Select Subject</option>
               {subject ? subject.length ? subject.map( (getsubject, index ) => (
                 <option value={getsubject.subId, getsubject.subjectLink} key={index}>{getsubject.subjectName}</option>
