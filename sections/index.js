@@ -4,6 +4,7 @@ import Placements from './Placements';
 import MottoOfCSA from './MottoOfCSA';
 import Academics from './Academics';
 import Events from './Events';
+import GoalOfCSA from './GoalOfCSA'
 
 export {
   Header,
@@ -12,4 +13,5 @@ export {
   MottoOfCSA,
   Academics,
   Events,
+  GoalOfCSA,
 };

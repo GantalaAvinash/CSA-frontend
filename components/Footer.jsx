@@ -11,12 +11,12 @@ const Footer = () => (
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.xPaddings} py-8 relative`}
+    className={`${styles.xPaddings} pt-8 relative`}
   >
     <div className="footer-gradient z-10" />
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
       <div className="flex items-center justify-between flex-wrap gap-5">
-        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
+        <h4 className="font-bold md:text-[44px] text-[24px] text-white">
           Reach Us
         </h4>
         <Link type="button" href="mailto:csassociation@mrec.ac.in" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
@@ -32,10 +32,10 @@ const Footer = () => (
       </div>
 
       <div className="flex flex-col">
-        <div className="mb-[50px] h-[2px] bg-white opacity-10" />
+        <div className="mb-[20px] h-[2px] bg-white opacity-10" />
 
         <div className="flex items-center justify-between flex-wrap gap-4">
-          <h4 className="font-extrabold text-[24px] text-white">
+          <h4 className="font-extrabold text-[18px] text-white">
             CYBER SECURITY ASSOCIATION
           </h4>
           <p className="font-normal text-[14px] text-white opacity-50">

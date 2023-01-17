@@ -1,5 +1,5 @@
 import { Footer, Navbar } from '../components';
-import { About, Placements, MottoOfCSA, Header, Events, Academics } from '../sections';
+import { About, Placements, MottoOfCSA, Header, Events, Academics, GoalOfCSA } from '../sections';
 
 const Home = () => (
   <div className="bg-primary-black overflow-hidden">
@@ -19,6 +19,7 @@ const Home = () => (
       <Academics />
       <div className="gradient-04 z-0" />
     </div>
+    <GoalOfCSA />
     <Footer />
   </div>
 );
