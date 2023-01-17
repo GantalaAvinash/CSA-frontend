@@ -14,5 +14,5 @@ export {
   PlacementCard,
   EventCard,
   Footer,
-  StartSteps
+  StartSteps,
 };

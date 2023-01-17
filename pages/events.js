@@ -1,5 +1,5 @@
 import { Footer } from '../components';
-import CommonNavbar from '../Eventpage/CommonNavbar'
+import CommonNavbar from '../Eventpage/CommonNavbar';
 import Eventspage from '../Eventpage/Events';
 
 const Events = () => (
