@@ -42,7 +42,7 @@ export const academics = [
     imgUrl: '/books1.svg',
     title: 'Study Material',
     subtitle:'Click here to get Academic study material',
-    link: 'https://mallareddycybersecurity.firebaseapp.com',
+    link: '/material',
   },
   {
     imgUrl: '/online_video.svg',
@@ -105,4 +105,78 @@ export const socials = [
     url: '/discord.svg',
     link: 'https://discord.com/invite/YTacNZJrMX?lt_utm_source=lt_share_link'
   },
+];
+
+export const batch = [
+  {
+    "_id": "63c3b5b048f7b648d035c74e",
+    "batchId": 1,
+    "batchYear": "I Year"
+  },
+  {
+    "_id": "63c3b61548f7b648d035c74f",
+    "batchId": 2,
+    "batchYear": "II Year"
+  },
+  {
+    "_id": "63c3b62d48f7b648d035c750",
+    "batchId": 3,
+    "batchYear": "III Year"
+  },
+  {
+    "_id": "63c3b63e48f7b648d035c751",
+    "batchId": 4,
+    "batchYear": "IV Year"
+  }
+];
+
+export const sem = [
+  {
+    "_id": "63c3bbd648f7b648d035c752",
+    "semId": 1,
+    "batchId": 1,
+    "semester": "I Semester"
+  },
+  {
+    "_id": "63c3bc2a48f7b648d035c753",
+    "semId": 2,
+    "batchId": 1,
+    "semester": "II Semester"
+  },
+  {
+    "_id": "63c3bc5e48f7b648d035c754",
+    "semId": 3,
+    "batchId": 2,
+    "semester": "I Semester"
+  },
+  {
+    "_id": "63c3bc7548f7b648d035c755",
+    "semId": 4,
+    "batchId": 2,
+    "semester": "II Semester"
+  },
+  {
+    "_id": "63c3bc9448f7b648d035c756",
+    "semId": 5,
+    "batchId": 3,
+    "semester": "I Semester"
+  },
+  {
+    "_id": "63c3bcad48f7b648d035c757",
+    "semId": 6,
+    "batchId": 3,
+    "semester": "II Semester"
+  },
+  {
+    "_id": "63c3bcc048f7b648d035c758",
+    "semId": 7,
+    "batchId": 4,
+    "semester": "I Semester"
+  },
+  {
+    "_id": "63c3bcdb48f7b648d035c759",
+    "semId": 8,
+    "batchId": 4,
+    "semester": "II Semester"
+  }
 ];

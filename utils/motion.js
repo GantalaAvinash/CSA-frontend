@@ -116,7 +116,7 @@ export const planetVariants = (direction) => ({
     rotate: 0,
     transition: {
       type: 'spring',
-      duration: 1.8,
+      duration: 0.5,
       delay: 0.5,
     },
   },

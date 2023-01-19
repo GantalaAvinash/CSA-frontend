@@ -42,7 +42,7 @@ const Footer = () => (
             Copyright © 2023 - MREC Cyber Security Assossation
           </p>
 
-          <div className="flex gap-4 z-20">
+          <div className="flex gap-4 z-20 pb-8">
             {socials.map((social) => (
               <Link target="_Blank" rel="noreferrer" href={social.link}>
                 <img

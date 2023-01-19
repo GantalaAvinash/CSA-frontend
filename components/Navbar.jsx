@@ -34,6 +34,7 @@ const Navbar = () => {
           <p><Link href="#placements">Placements</Link></p>
           <p><Link href="/events">Events</Link></p>
           <p><Link href="#academics">Academics</Link></p>
+          <p><Link href="/features/Qr">Generate QR</Link></p>
           <p><Link href="#GoalOfCSA">About</Link></p>
         </div>
       </div>
@@ -52,6 +53,7 @@ const Navbar = () => {
             <p><Link href="#placements" onClick={() => setToggleMenu(false)}>Placements</Link></p>
             <p><Link href="/events" onClick={() => setToggleMenu(false)}>Events</Link></p>
             <p><Link href="#academics" onClick={() => setToggleMenu(false)}>Academics</Link></p>
+            <p><Link href="/features/Qr" onClick={() => setToggleMenu(false)}>Generate QR</Link></p>
             <p><Link href="#GoalOfCSA" onClick={() => setToggleMenu(false)}>About</Link></p>
           </div>
           {/* <div className="gpt3__navbar-menu_container-links-sign">

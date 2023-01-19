@@ -1,19 +1,30 @@
-   
-  export default function courses() {
-    return (
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <img class="w-full" src="https://i.ibb.co/8jbNm1X/Twitter-Quote-Template-for-Social-Media.png" alt="Sunset in the mountains" />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-          </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-        </div>
-      </div>
-    );
-  }
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+
+export default function ActionAreaCard() {
+  return (
+    <Card sx={{ maxWidth: 250 }}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image="/cs-logo.jpg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  );
+}

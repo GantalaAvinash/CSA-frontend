@@ -20,7 +20,7 @@ const Events = () => {
       >
         <TypingText title="| Events" textStyles="text-center" />
         <TitleText title={<>EVENTS</>} textStyles="text-center" />
-        <div className="mt-[50px] flex flex-col gap-[30px]">
+        <div className="mt-[50px] flex flex-col gap-[20px]">
           {events.map((item, index) => (
             <EventCard key={`insight-${index}`} {...item} index={index + 1} />
           ))}

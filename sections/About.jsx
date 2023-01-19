@@ -20,7 +20,7 @@ const About = () => (
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-sans sm:text-[32px] text-[20px] text-center text-secondary-white"
+        className="mt-[8px] font-sans sm:text-[32px] text-[18px] text-center text-secondary-white"
       >
         <span className="font-extrabold text-white">In today's world,</span> Cybersecurity is very important because of some security threats and cyber-attacks. For data protection, many companies develop software. This software protects the data. <br></br>
         <span className="font-extrabold text-white">

@@ -29,8 +29,7 @@ const Academics = () => (
         </div>
       </motion.div>
 
-      <motion.div
-        variants={planetVariants('right')}
+      <div
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
@@ -38,7 +37,7 @@ const Academics = () => (
           alt="Academics"
           className="w-[90%] h-[90%] object-contain"
         />
-      </motion.div>
+      </div>
     </motion.div>
   </section>
 );

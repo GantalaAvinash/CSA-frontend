@@ -26,3 +26,14 @@ export const TitleText = ({ title, textStyles }) => (
     {title}
   </motion.h2>
 );
+
+export const EventTitleText = ({ title, textStyles }) => (
+  <motion.h2
+    variants={textVariant2}
+    initial="hidden"
+    whileInView="show"
+    className={`mt-[2px] font-bold md:text-[35px] text-[20px] text-white ${textStyles}`}
+  >
+    {title}
+  </motion.h2>
+);

@@ -127,7 +127,7 @@
   position: absolute;
   width: 500px;
   height: 100px;
-  left: 37%;
+  left: 27%;
   bottom: 0;
 
   background: #65c4fa;
@@ -152,7 +152,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 15;
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 4rem;
 }
 
 .gpt3_navbar-color{
@@ -311,9 +311,18 @@
 .gpt3__header-content h1 {
   font-family: var(--font-family);
   font-weight: 800;
-  font-size: 72px;
+  font-size: 65px;
   line-height: 75px;
   letter-spacing: -0.04em;
+}
+
+.qr-text {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  margin-bottom: 25px;
 }
 
 .gpt3__header-image {
@@ -324,7 +333,7 @@
 }
 
 .gpt3__header-image img {
-  width: 100%;
+  width: 85%;
   height: 100%;
 }
 
@@ -343,6 +352,11 @@
       font-size: 48px;
       line-height: 60px;
   }
+
+  .qr-text {
+    font-size: 48px;
+    line-height: 60px;
+}
 }
 
 @media screen and (max-width: 490px) {
@@ -350,6 +364,11 @@
       font-size: 36px;
       line-height: 48px;
   }
+
+  .qr-text {
+    font-size: 36px;
+    line-height: 48px;
+}
 }
 
 .gradient__bg {
