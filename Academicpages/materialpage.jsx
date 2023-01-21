@@ -3,12 +3,11 @@ import axios from 'axios';
 import Link from 'next/link';
 import { FaSearchengin } from 'react-icons/fa'
 import styles from '../styles'
-import { batch } from '../constants';
 
 const materialPage = () => {
 
 
-  // const [batch, setBatch] = useState([]);
+  const [batch, setBatch] = useState([]);
   const [semester, setSemester] = useState([]);
   const [subject, setSubject] = useState([]);
   const [subjectLink, setSubjectLink] = useState([]);
@@ -17,13 +16,13 @@ const materialPage = () => {
   const [enableBtn, setEnableBtn] = useState(true);
 
   const baseUrl = 'https://csa-backend-iuwv.onrender.com/api';
-  // useEffect(() => {
-  //   axios.get(`${baseUrl}/batch`)
-  //     .then((response) => {
-  //       setBatch(response.data.batch);
-  //     })
-  //     .catch((error) => { console.error(error); });
-  // }, []);
+  useEffect(() => {
+    axios.get(`${baseUrl}/batch`)
+      .then((response) => {
+        setBatch(response.data.batch);
+      })
+      .catch((error) => { console.error(error); });
+  }, [])
 
     const handleBatch = async(e) => {
       const batchId = e.target.value;
@@ -92,7 +91,7 @@ const materialPage = () => {
           <div className="my-20">
             <Link href={subjectLink} target='_blank' className="cursor-pointer mx-auto">
               <button type="button" disabled={enableBtn} className="cursor-pointer mx-auto mt-[60px] mb-[60px] bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-red-600 rounded hover:text-red-600 ...">
-              Show More..
+              submit
               </button>
             </Link>
           </div>
