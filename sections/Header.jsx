@@ -3,7 +3,7 @@ import React from 'react';
 // import ai from '/bg-logo.svg';
 
 const Header = () => (
-  <div className="gpt3__header section__padding" id="home">
+  <div className="gpt3__header section__padding overflow-hidden" id="home">
     <div className="gpt3__header-content">
       <h1 className="gradient__text">CYBER SECURITY ASSOCIATION</h1>
     </div>

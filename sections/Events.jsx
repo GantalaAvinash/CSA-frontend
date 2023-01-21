@@ -10,7 +10,7 @@ import { EventCard, TitleText, TypingText } from '../components';
 
 const Events = () => {
   return (
-    <section className={`${styles.paddings} relative z-10`} id="events">
+    <section className={`${styles.paddings} overflow-hidden relative z-10`} id="events">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

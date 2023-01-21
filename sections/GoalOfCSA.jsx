@@ -2,7 +2,7 @@ import React from 'react';
 import { GoalsOfCS } from '../components'
 
 const GoalOfCSA = () => (
-  <div className="gpt3__whatgpt3 section__margin glassmorphism" id="GoalOfCSA">
+  <div className="gpt3__whatgpt3 section__margin overflow-hidden glassmorphism" id="GoalOfCSA">
     <div className="gpt3__whatgpt3-feature">
       <GoalsOfCS title="Goal of Association" text="We offer a variety of events, workshops, and guest speaker sessions throughout the year to help students stay informed about the latest developments in cyber security. Our members also have the opportunity to participate in cyber security competitions and hackathons, which provide hands-on experience and the opportunity to apply the skills they have learned." />
     </div>

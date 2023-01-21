@@ -8,7 +8,7 @@ import { Academic, TitleText, TypingText } from '../components';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 
 const Academics = () => (
-  <section className={`${styles.paddings} relative z-10`} id="academics">
+  <section className={`${styles.paddings} overflow-hidden relative z-10`} id="academics">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
